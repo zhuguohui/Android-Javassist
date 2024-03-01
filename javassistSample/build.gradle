@@ -1,0 +1,33 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.1.2'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 15
+    buildToolsVersion '15.0.1'
+    defaultConfig {
+        applicationId 'com.trs.text'
+        minSdkVersion 15
+        //noinspection ExpiredTargetSdkVersion
+        targetSdkVersion 15
+        versionCode 11
+        versionName '1.0.1'
+    }
+}
+
+dependencies {
+    implementation project(path: ':javassist-android')
+    implementation project(path: ':dx')
+}

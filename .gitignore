@@ -1,0 +1,16 @@
+/dx/bin
+/dx/gen
+/javassist-android/bin
+/javassist-android/gen
+/javassistSample/bin
+/javassistSample/gen
+
+# Project exclude paths
+/.gradle/
+/dx/build/
+/dx/build/intermediates/javac/debug/classes/
+/javassist-android/build/
+/javassist-android/build/intermediates/javac/debug/classes/
+/javassistSample/build/
+/javassistSample/build/intermediates/javac/debug/classes/
+/out/

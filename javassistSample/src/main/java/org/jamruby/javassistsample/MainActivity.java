@@ -11,6 +11,10 @@ import javassist.CtClass;
 import javassist.CtConstructor;
 import javassist.CtMethod;
 import javassist.android.DexFile;
+import javassist.bytecode.AnnotationsAttribute;
+import javassist.bytecode.annotation.Annotation;
+
+
 import android.os.Bundle;
 import android.os.Handler;
 import android.app.Activity;
@@ -18,12 +22,15 @@ import android.view.Menu;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
+
 public class MainActivity extends Activity {
 
     private static final String DEX_FILE_NAME_MYCLASSES = "myclasses.dex";
     private static final boolean FORCE_GENRATE_DEX = false;
 
-	@Override
+
+    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -45,8 +52,16 @@ public class MainActivity extends Activity {
 						cls);
 				cls.addMethod(m1);
 				final CtMethod m2 = CtMethod.make(
-						"public void setText(android.widget.TextView view) { view.setText((java.lang.CharSequence)\"hoge.setText() is called.\"); }",
+						"public void setText(android.widget.TextView view) { view.setText((java.lang.CharSequence)\"hoge.setText() is called 222.\"); }",
 						cls);
+
+				// 创建注解
+				AnnotationsAttribute attr = new AnnotationsAttribute(m2.getMethodInfo().getConstPool(), AnnotationsAttribute.visibleTag);
+				Annotation annotation = new Annotation("android.annotation.TargetApi", m2.getMethodInfo().getConstPool());
+				attr.addAnnotation(annotation);
+				// 在方法上添加注解
+				m2.getMethodInfo().addAttribute(attr);
+
 				cls.addMethod(m2);
 				cls.writeFile(getFilesDir().getAbsolutePath());
 				

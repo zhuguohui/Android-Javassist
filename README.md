@@ -1,5 +1,11 @@
-## 原来的项目不维护了，这是我拉下来，配置了gralde。目前看来还是可以运行的。
+## 原来的项目不维护了，这是我拉下来，配置了gralde。目前看来还是可以运行的(2024年3月1日）
 
+====
+
+这是以前项目的内容
+
+ [原来项目地址javassist-android](https://github.com/crimsonwoods/javassist-android)
+====
 NOT MAINTAINED!
 ====
 

@@ -10,7 +10,8 @@ buildscript {
         // in the individual module build.gradle files
     }
 }
-
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.zhuguohui'
 apply plugin: 'com.android.library'
 
 android {

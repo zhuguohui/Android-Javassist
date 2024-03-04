@@ -11,6 +11,8 @@ buildscript {
     }
 }
 
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.zhuguohui'
 
 apply plugin: 'com.android.application'
 

@@ -1,5 +1,28 @@
 ## 原来的项目不维护了，这是我拉下来，配置了gralde。目前看来还是可以运行的(2024年3月1日）
 
+## 引入
+
+仓库地址
+
+```groovy
+	repositories {
+		
+			maven { url 'https://jitpack.io' }
+		}
+```
+
+要引入以下两个依赖
+
+```groovy
+
+	dependencies {
+	        implementation 'com.github.zhuguohui.Android-Javassist:dx:v1.0.0'
+	         implementation 'com.github.zhuguohui.Android-Javassist:javassist-android:v1.0.0'
+	}
+```
+
+
+
 运行效果
 
 
@@ -8,10 +31,20 @@
 
 
 
-这是以前项目的内容
+
 
  [原来项目地址javassist-android](https://github.com/crimsonwoods/javassist-android)
 ====
+
+
+
+
+
+
+这是以前项目的内容
+
+
+
 NOT MAINTAINED!
 ====
 

@@ -17,10 +17,10 @@ apply plugin: 'com.android.library'
 
 android {
     //noinspection GradleCompatible
-    compileSdkVersion 15
+    compileSdkVersion 30
 
     defaultConfig {
-        minSdkVersion 15
+        minSdkVersion 30
         targetSdkVersion 33
         versionCode 100
         versionName "1.0.0"

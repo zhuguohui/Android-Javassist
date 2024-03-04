@@ -14,12 +14,12 @@ buildscript {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 15
+    compileSdkVersion 30
 
     defaultConfig {
         minSdkVersion 15
         //noinspection ExpiredTargetSdkVersion
-        targetSdkVersion 15
+        targetSdkVersion 30
         versionCode 100
         versionName "1.0.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"

@@ -16,8 +16,8 @@
 ```groovy
 
 	dependencies {
-	        implementation 'com.github.zhuguohui.Android-Javassist:dx:v1.0.0'
-	         implementation 'com.github.zhuguohui.Android-Javassist:javassist-android:v1.0.0'
+	        implementation 'com.github.zhuguohui.Android-Javassist:dx:v1.0.1'
+	         implementation 'com.github.zhuguohui.Android-Javassist:javassist-android:v1.0.1'
 	}
 ```
 
